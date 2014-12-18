@@ -19,4 +19,5 @@ void midiProcessing::printMarkovList()
         }
         printf("\n");
     }
+    printf("\n");
 }

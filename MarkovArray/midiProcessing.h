@@ -8,18 +8,19 @@
 
 #include <stdio.h>
 #include <vector>
+#include "Note.h"
 
 class midiProcessing
 {
 private:
-    std::vector<int> trackData{1, 2, 3, 4, 5, 6};
+    std::vector<int> trackData{1, 2, 3, 4, 5, 4, 3, 2, 1};
     std::vector< std::vector<int> > markovList;
     std::vector<int> tempVector;
 public:
     midiProcessing();
-    void generateList();
     void printTrack();
     void sortTempVector();
+    void sort2ndTempVector();
     void printMarkovList();
     void generateMarkovList();
     void generate2ndMarkovList();

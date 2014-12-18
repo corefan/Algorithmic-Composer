@@ -16,4 +16,4 @@ void midiProcessing::printTrack()
         printf("%d,", midiProcessing::trackData[i]);
     }
     printf("\n\n");
-};
+}

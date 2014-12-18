@@ -22,4 +22,4 @@ void midiProcessing::generateMarkovList()
             }
         }
     }
-};
+}

@@ -9,15 +9,15 @@
 #include <iostream>
 #include "midiProcessing.h"
 
-///adfoherjdjdjdjdjdjieieiejfiernagh///
-
 int main() {
     midiProcessing mp;
     mp.printTrack();
     mp.sortTempVector();
     mp.generateMarkovList();
     mp.printMarkovList();
-};
-
-
-// ohje ein Kommentar
+    
+    midiProcessing mps;
+    mps.sort2ndTempVector();
+    mps.generate2ndMarkovList();
+    mps.printMarkovList();
+}
