@@ -9,8 +9,6 @@
 #include <iostream>
 #include "midiProcessing.h"
 
-///adfoherjdjdjdjdjdjieieiejfiernagh///
-
 int main() {
     midiProcessing mp;
     mp.printTrack();
@@ -18,6 +16,3 @@ int main() {
     mp.generateMarkovList();
     mp.printMarkovList();
 };
-
-
-// ohje ein Kommentar

@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 #include <vector>
+#include "Note.h"
 
 class midiProcessing
 {
@@ -17,7 +18,6 @@ private:
     std::vector<int> tempVector;
 public:
     midiProcessing();
-    void generateList();
     void printTrack();
     void sortTempVector();
     void printMarkovList();
