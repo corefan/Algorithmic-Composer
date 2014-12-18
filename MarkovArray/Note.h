@@ -13,11 +13,12 @@
 
 #endif
 
-class Note
+class note
 {
+public:
+    note(int number, int length, int velocity);
 private:
-    std::vector<int> NoteData{0, 0, 0};
-    Note();
+    std::vector<int> noteData{0, 0, 0};
     void setNumber(int number);
     void setLength(int length);
     void setVelocity(int velocity);

@@ -9,11 +9,11 @@
 #include <stdio.h>
 #include "Note.h"
 
-void Note::setNumber(int number)
+void note::setNumber(int number)
 {
     if(number >= 0 && number < 128)
     {
-        Note::NoteData[0] = number;
+        note::noteData[0] = number;
     }
     else
     {
@@ -21,16 +21,16 @@ void Note::setNumber(int number)
     }
 }
 
-void Note::setLength(int length)
+void note::setLength(int length)
 {
-    Note::NoteData[1] = length;
+    note::noteData[1] = length;
 }
 
-void Note::setVelocity(int velocity)
+void note::setVelocity(int velocity)
 {
     if(velocity >= 0 && velocity < 128)
     {
-        Note::NoteData[2] = velocity;
+        note::noteData[2] = velocity;
     }
     else
     {
@@ -38,9 +38,9 @@ void Note::setVelocity(int velocity)
     }
 }
 
-void Note::setNote(int number, int length, int velocity)
+void note::setNote(int number, int length, int velocity)
 {
-    Note::NoteData[0] = number;
-    Note::NoteData[1] = length;
-    Note::NoteData[2] = velocity;
+    note::noteData[0] = number;
+    note::noteData[1] = length;
+    note::noteData[2] = velocity;
 }

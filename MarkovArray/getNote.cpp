@@ -9,22 +9,22 @@
 #include <stdio.h>
 #include "Note.h"
 
-int Note::getNumber()
+int note::getNumber()
 {
-    return Note::NoteData[0];
+    return note::noteData[0];
 }
 
-int Note::getLength()
+int note::getLength()
 {
-    return Note::NoteData[0];
+    return note::noteData[0];
 }
 
-int Note::getVelocity()
+int note::getVelocity()
 {
-    return Note::NoteData[0];
+    return note::noteData[0];
 }
 
-std::vector<int> Note::getNote()
+std::vector<int> note::getNote()
 {
-    return Note::NoteData;
+    return note::noteData;
 }
