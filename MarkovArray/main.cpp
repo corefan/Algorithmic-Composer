@@ -15,13 +15,11 @@ int main() {
     mp.sortTempVector();
     mp.generateMarkovList();
     mp.printMarkovList();
-<<<<<<< HEAD
+
     
     midiProcessing mps;
     mps.sort2ndTempVector();
     mps.generate2ndMarkovList();
     mps.printMarkovList();
-}
-=======
+
 };
->>>>>>> FETCH_HEAD

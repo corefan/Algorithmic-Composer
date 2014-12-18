@@ -14,7 +14,6 @@
 		804B90631A37645B006723ED /* sortTempVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804B90621A37645B006723ED /* sortTempVector.cpp */; };
 		804B90651A377384006723ED /* printMarkovList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804B90641A377384006723ED /* printMarkovList.cpp */; };
 		804B90671A377BC3006723ED /* generateMarkovList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804B90661A377BC3006723ED /* generateMarkovList.cpp */; };
-		80C8B9B41A42F02900E73DF9 /* Note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80C8B9B31A42F02900E73DF9 /* Note.cpp */; };
 		80D4577C1A39AB9900461D7C /* generate2ndMarkovList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D4577B1A39AB9900461D7C /* generate2ndMarkovList.cpp */; };
 		80D457811A39B31800461D7C /* setNote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D457801A39B31800461D7C /* setNote.cpp */; };
 		80D457831A39B55A00461D7C /* getNote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D457821A39B55A00461D7C /* getNote.cpp */; };
@@ -42,7 +41,6 @@
 		804B90621A37645B006723ED /* sortTempVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sortTempVector.cpp; sourceTree = "<group>"; };
 		804B90641A377384006723ED /* printMarkovList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printMarkovList.cpp; sourceTree = "<group>"; };
 		804B90661A377BC3006723ED /* generateMarkovList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generateMarkovList.cpp; sourceTree = "<group>"; };
-		80C8B9B31A42F02900E73DF9 /* Note.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Note.cpp; path = ../Note.cpp; sourceTree = "<group>"; };
 		80D4577B1A39AB9900461D7C /* generate2ndMarkovList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generate2ndMarkovList.cpp; sourceTree = "<group>"; };
 		80D4577D1A39AF6600461D7C /* Note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		80D457801A39B31800461D7C /* setNote.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = setNote.cpp; sourceTree = "<group>"; };
@@ -91,20 +89,12 @@
 			isa = PBXGroup;
 			children = (
 				804B90581A375C45006723ED /* midiProcessing.h */,
-<<<<<<< HEAD
-=======
-				804B90601A37636D006723ED /* midiProcessing.cpp */,
-				80D4577B1A39AB9900461D7C /* generate2ndMarkovList.cpp */,
->>>>>>> FETCH_HEAD
 				804B90661A377BC3006723ED /* generateMarkovList.cpp */,
 				80D4577B1A39AB9900461D7C /* generate2ndMarkovList.cpp */,
 				804B90641A377384006723ED /* printMarkovList.cpp */,
 				804B90621A37645B006723ED /* sortTempVector.cpp */,
-<<<<<<< HEAD
 				FB3663221A42ED9A0093157A /* sort2ndTempVector.cpp */,
 				804B90601A37636D006723ED /* midiProcessing.cpp */,
-=======
->>>>>>> FETCH_HEAD
 				804B905C1A375E4C006723ED /* printTrack.cpp */,
 			);
 			name = MidiProcessing;
@@ -114,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				80D4577D1A39AF6600461D7C /* Note.h */,
-				80C8B9B31A42F02900E73DF9 /* Note.cpp */,
 				80D457821A39B55A00461D7C /* getNote.cpp */,
 				80D457801A39B31800461D7C /* setNote.cpp */,
 			);
@@ -179,7 +168,6 @@
 			files = (
 				804B90651A377384006723ED /* printMarkovList.cpp in Sources */,
 				80D457811A39B31800461D7C /* setNote.cpp in Sources */,
-				80C8B9B41A42F02900E73DF9 /* Note.cpp in Sources */,
 				804B905D1A375E4C006723ED /* printTrack.cpp in Sources */,
 				804B90631A37645B006723ED /* sortTempVector.cpp in Sources */,
 				80D4577C1A39AB9900461D7C /* generate2ndMarkovList.cpp in Sources */,
