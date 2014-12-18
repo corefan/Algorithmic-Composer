@@ -18,3 +18,6 @@ int main() {
     mp.generateMarkovList();
     mp.printMarkovList();
 };
+
+
+// ohje ein Kommentar
