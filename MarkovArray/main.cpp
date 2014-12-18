@@ -9,6 +9,8 @@
 #include <iostream>
 #include "midiProcessing.h"
 
+///adfoherjdjdjdjdjdjieieiejfiernagh///
+
 int main() {
     midiProcessing mp;
     mp.printTrack();
