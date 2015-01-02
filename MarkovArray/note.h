@@ -15,10 +15,12 @@
 
 class note
 {
-public:
-    note(int number, int length, int velocity);
 private:
     std::vector<int> noteData{0, 0, 0};
+    
+public:
+    note();
+    note(int number, int length, int velocity);
     void setNumber(int number);
     void setLength(int length);
     void setVelocity(int velocity);

@@ -17,7 +17,7 @@ void note::setNumber(int number)
     }
     else
     {
-        printf("ERROR: Number out of Range");
+        printf("ERROR: Notenumber out of Range");
     }
 }
 

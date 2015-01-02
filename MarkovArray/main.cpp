@@ -12,14 +12,11 @@
 int main() {
     midiProcessing mp;
     mp.printTrack();
-    mp.sortTempVector();
     mp.generateMarkovList();
     mp.printMarkovList();
 
     
     midiProcessing mps;
-    mps.sort2ndTempVector();
     mps.generate2ndMarkovList();
     mps.printMarkovList();
-
 };

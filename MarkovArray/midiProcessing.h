@@ -16,6 +16,8 @@ private:
     std::vector<int> trackData{1, 2, 3, 4, 5, 4, 3, 2, 1};
     std::vector< std::vector<int> > markovList;
     std::vector<int> tempVector;
+    std::vector<note> noteData;
+    
 public:
     midiProcessing();
     void printTrack();
@@ -24,4 +26,5 @@ public:
     void printMarkovList();
     void generateMarkovList();
     void generate2ndMarkovList();
+    void passNoteData();
 };
