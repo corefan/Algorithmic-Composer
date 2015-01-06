@@ -14,7 +14,7 @@
 class midiProcessing
 {
 private:
-    std::vector<int> trackData{1, 2, 3, 4, 5, 4, 3, 2, 1};
+    std::vector<int> trackData{1, 5, 3, 4};
     std::vector< std::vector<int> > markovList;
     std::vector<int> tempVector;
     std::vector<note> noteData;

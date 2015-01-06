@@ -13,5 +13,9 @@ midiProcessing::midiProcessing()
 {
     passNoteData();
     midiProcessing::tempVector = midiProcessing::trackData;
-    std::sort(midiProcessing::tempVector.begin(), midiProcessing::tempVector.end());
+    
+    
+    std::sort(midiProcessing::noteData.begin(), midiProcessing::noteData.end());
+    
+    
 }

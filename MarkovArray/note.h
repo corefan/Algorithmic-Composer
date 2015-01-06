@@ -32,10 +32,15 @@ public:
     int getNumber();
     int getLength();
     int getVelocity();
+    
     std::vector<int> getNote();
     
-    bool operator < (const note & rightOp) const
+    
+    note(int k) : key(k){}
+        
+    bool operator < (const note& str) const
     {
-        return (key<rightOp.getNumber);
+        return (key < str.key);
     }
+    
 };
