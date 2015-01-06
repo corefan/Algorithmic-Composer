@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <vector>
 #include "Note.h"
+#include "readMidi.h"
 
 class midiProcessing
 {

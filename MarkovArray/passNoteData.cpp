@@ -9,10 +9,6 @@
 #include <stdio.h>
 #include "midiProcessing.h"
 
-//passing trackData to Vector of notes (noteData)
-
-//TODO: adding length and Velocity to trackData to pass it to noteData
-
 void midiProcessing::passNoteData()
 {
     for (int i = 0; i < midiProcessing::trackData.size(); i++)

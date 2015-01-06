@@ -21,6 +21,9 @@ private:
 public:
     note();
     note(int number, int length, int velocity);
+    
+    int key;
+    
     void setNumber(int number);
     void setLength(int length);
     void setVelocity(int velocity);
@@ -30,4 +33,9 @@ public:
     int getLength();
     int getVelocity();
     std::vector<int> getNote();
+    
+    bool operator < (const note & rightOp) const
+    {
+        return (key<rightOp.getNumber);
+    }
 };
