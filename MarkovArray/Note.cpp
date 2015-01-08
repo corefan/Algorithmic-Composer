@@ -16,3 +16,10 @@ note::note(int number, int length, int velocity)
     note::noteData[1] = length;
     note::noteData[2] = velocity;
 }
+
+note::note(const note &obj)
+{
+    noteData = obj.noteData;
+    key = obj.key;
+    printf("%s ", "Kopiert");
+}

@@ -15,7 +15,7 @@ void midiProcessing::printMarkovList()
     {
         for(int j = 0; j < midiProcessing::markovList[i].size(); j++)
         {
-            printf("%d ", midiProcessing::markovList[i][j]);
+            printf("%d ", midiProcessing::markovList[i][j].getNumber());
         }
         printf("\n");
     }

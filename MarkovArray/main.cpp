@@ -12,8 +12,10 @@
 int main() {
     midiProcessing mp;
     mp.printTrack();
-    /*mp.generateMarkovList();
+    mp.generateMarkovList();
+    /*
     mp.printMarkovList();
+    
 
     
     midiProcessing mps;

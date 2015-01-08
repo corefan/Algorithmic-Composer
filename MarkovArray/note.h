@@ -17,12 +17,11 @@ class note
 {
 private:
     std::vector<int> noteData{0, 0, 0};
+    int key;
     
 public:
     note();
     note(int number, int length, int velocity);
-    
-    int key;
     
     void setNumber(int number);
     void setLength(int length);
@@ -39,8 +38,11 @@ public:
     note(int k) : key(k){}
         
     bool operator < (const note& str) const
+
     {
         return (key < str.key);
     }
+    
+    note (const note &obj);
     
 };

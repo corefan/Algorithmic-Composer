@@ -13,7 +13,7 @@ void midiProcessing::printTrack()
 {
     for(int i = 0; i < midiProcessing::noteData.size(); i++)
     {
-        printf("%d,", midiProcessing::noteData[i].getNumber());
+        printf("%d ", midiProcessing::noteData[i].getNumber());
     }
     printf("\n\n");
 }
