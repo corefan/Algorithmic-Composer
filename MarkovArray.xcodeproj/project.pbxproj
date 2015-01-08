@@ -85,8 +85,8 @@
 		804B90501A375B6C006723ED /* MarkovArray */ = {
 			isa = PBXGroup;
 			children = (
-				807978861A573BA60036D749 /* ReadMidi */,
 				804B90511A375B6C006723ED /* main.cpp */,
+				807978861A573BA60036D749 /* ReadMidi */,
 				80D4577E1A39B2E600461D7C /* MidiProcessing */,
 				80D4577F1A39B2F200461D7C /* Note */,
 			);

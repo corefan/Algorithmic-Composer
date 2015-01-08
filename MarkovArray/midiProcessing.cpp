@@ -12,10 +12,4 @@
 midiProcessing::midiProcessing()
 {
     passNoteData();
-    midiProcessing::tempVector = midiProcessing::trackData;
-    
-    
-    std::sort(midiProcessing::noteData.begin(), midiProcessing::noteData.end());
-    
-    
 }

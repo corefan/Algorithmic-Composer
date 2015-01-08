@@ -15,5 +15,6 @@ void midiProcessing::passNoteData()
     {
         note newNote(midiProcessing::trackData[i], 0, 0);
         midiProcessing::noteData.push_back(newNote);
+        midiProcessing::tempVector.push_back(newNote);
     }
 }

@@ -11,7 +11,7 @@
 
 void midiProcessing::printMarkovList()
 {
-    for(int i = 0; i < midiProcessing::markovList.size()-1; i++)
+    for(int i = 0; i < midiProcessing::markovList.size(); i++)
     {
         for(int j = 0; j < midiProcessing::markovList[i].size(); j++)
         {

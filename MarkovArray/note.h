@@ -34,7 +34,6 @@ public:
     
     std::vector<int> getNote();
     
-    
     note(int k) : key(k){}
         
     bool operator < (const note& str) const
@@ -42,7 +41,4 @@ public:
     {
         return (key < str.key);
     }
-    
-    note (const note &obj);
-    
 };
