@@ -16,3 +16,4 @@ note::note(int number, int length, int velocity)
     note::noteData[1] = length;
     note::noteData[2] = velocity;
 }
+

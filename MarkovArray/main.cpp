@@ -17,6 +17,7 @@ int main() {
     
 
     /*
+    
     midiProcessing mps;
     mps.generate2ndMarkovList();
     mps.printMarkovList();
