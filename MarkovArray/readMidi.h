@@ -5,27 +5,29 @@
 //  Created by Lukas Nowok on 02.01.15.
 //  Copyright (c) 2015 hw. All rights reserved.
 //
-/*MidiDaten in zweidimensionalem Vector
+/*
+ MidiDaten in zweidimensionalem Vector
  [noteNumber......]
  [velocity........]
  [length..........]
- 
- !Test Class!
- 
  */
 
 #ifndef MarkovArray_readMidi_h
 #define MarkovArray_readMidi_h
 
-# include <vector>
+//#include <vector>
+#include "MidiFile.h"
+#include "note.h"
 
 #endif
 
 class readMidi
 {
 private:
-    std::vector< std::vector<int> > midiData;
+    std::vector< std::vector<note> > noteData;
+    
 public:
-    void readFile();
-    std::vector< std::vector<int> > getMidiData();
+    readMidi();
+    void readFile(const char *filePath);
+    std::vector< std::vector<note> > getMidiData();
 };

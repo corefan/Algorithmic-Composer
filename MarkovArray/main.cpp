@@ -8,18 +8,18 @@
 
 #include <iostream>
 #include "midiProcessing.h"
+//#include "readMidi.h"
 
-int main() {
-    midiProcessing mp;
-    mp.printTrack();
-    mp.generateMarkovList();
-    mp.printMarkovList();
+int main()
+{
+    const char *afile = "/Users/Lukas/Documents/MD/5.Semester/Medienprogrammierung/test.mid";
+    readMidi rm;
     
 
-    /*
+    
     
     midiProcessing mps;
     mps.generate2ndMarkovList();
     mps.printMarkovList();
-    */
+    
 };

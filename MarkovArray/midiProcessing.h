@@ -7,8 +7,8 @@
 //
 
 #include <stdio.h>
-#include <vector>
-#include "Note.h"
+//#include <vector>
+//#include "note.h"
 #include "readMidi.h"
 
 class midiProcessing

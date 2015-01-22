@@ -15,22 +15,25 @@ void midiProcessing::sort2ndTempVector()
     int index = 1;
     std::vector<note> B;
     
+    std::sort(midiProcessing::tempVector.begin(), midiProcessing::tempVector.end());
+    
     midiProcessing::markovList.push_back(B);
-    midiProcessing::markovList[0].push_back(midiProcessing::noteData[0]);
+    
+    midiProcessing::markovList[0].push_back(midiProcessing::tempVector[0]);
     tempLastElement = midiProcessing::noteData[0].getNumber();
     
-    for(int i = 0; i <= midiProcessing::tempVector.size(); i++)
+    for(int i = 0; i < midiProcessing::tempVector.size(); i++)
     {
-        if(tempLastElement != midiProcessing::noteData[i].getNumber())
+        if(tempLastElement != midiProcessing::tempVector[i].getNumber())
         {
             midiProcessing::markovList.push_back(B);
-            midiProcessing::markovList[index].push_back(midiProcessing::noteData[i]);
+            midiProcessing::markovList[index].push_back(midiProcessing::tempVector[i]);
             index++;
-            tempLastElement = midiProcessing::noteData[i].getNumber();
+            tempLastElement = midiProcessing::tempVector[i].getNumber();
         }
-        else if(tempLastElement == midiProcessing::noteData[i].getNumber())
+        else if(tempLastElement == midiProcessing::tempVector[i].getNumber())
         {
-            tempLastElement = midiProcessing::noteData[i].getNumber();
+            tempLastElement = midiProcessing::tempVector[i].getNumber();
         }
         else
         {
