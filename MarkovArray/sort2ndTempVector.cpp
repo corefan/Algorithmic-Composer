@@ -11,33 +11,97 @@
 
 void midiProcessing::sort2ndTempVector()
 {
-    int tempLastElement = 0;
-    int index = 1;
+    int tempLastElement;
+    int index = 0;
     std::vector<note> B;
     
-    std::sort(midiProcessing::tempVector.begin(), midiProcessing::tempVector.end());
+    midiProcessing::tempVector2.push_back(B);
     
-    midiProcessing::markovList.push_back(B);
+    midiProcessing::tempVector2[0].push_back(midiProcessing::tempVector[0]);
+    tempLastElement = midiProcessing::tempVector[0].getNumber();
     
-    midiProcessing::markovList[0].push_back(midiProcessing::tempVector[0]);
-    tempLastElement = midiProcessing::noteData[0].getNumber();
-    
-    for(int i = 0; i < midiProcessing::tempVector.size(); i++)
+    for(int i = 1; i < midiProcessing::tempVector.size(); i++)
     {
-        if(tempLastElement != midiProcessing::tempVector[i].getNumber())
+        midiProcessing::tempVector2.push_back(B);
+        midiProcessing::tempVector2[i].push_back(midiProcessing::tempVector[i]);
+        midiProcessing::tempVector2[i-1].push_back(midiProcessing::tempVector[i]);
+        tempLastElement = midiProcessing::tempVector[i].getNumber();
+        index++;
+    }
+    
+    //midiProcessing::tempVector2[index].push_back(midiProcessing::tempVector[0]);
+    std::sort(midiProcessing::tempVector2.begin(), midiProcessing::tempVector2.end());
+    
+    int tempLastElement2;
+    index = 0;
+    
+    midiProcessing::markovList2.push_back(B);
+    
+    if (midiProcessing::tempVector2[0].size() == 2)
+    {
+        midiProcessing::markovList2[0].push_back(midiProcessing::tempVector2[0][0]);
+        midiProcessing::markovList2[0].push_back(midiProcessing::tempVector2[0][1]);
+    }
+    else if(midiProcessing::tempVector2[0].size() == 1)
+    {
+        midiProcessing::markovList2[0].push_back(midiProcessing::tempVector2[0][0]);
+    }
+    else
+    {
+        printf("ERROR: 503");
+    }
+    
+    tempLastElement = midiProcessing::tempVector2[0][0].getNumber();
+    tempLastElement2 = midiProcessing::tempVector2[0][1].getNumber();
+    
+    for(int i = 1; i < midiProcessing::tempVector2.size(); i++)
+    {
+        if(tempLastElement == midiProcessing::tempVector2[i][0].getNumber() && tempLastElement2 == midiProcessing::tempVector2[i][1].getNumber())
         {
-            midiProcessing::markovList.push_back(B);
-            midiProcessing::markovList[index].push_back(midiProcessing::tempVector[i]);
-            index++;
-            tempLastElement = midiProcessing::tempVector[i].getNumber();
+            if (midiProcessing::tempVector2[i].size() == 2)
+            {
+                tempLastElement = midiProcessing::tempVector2[i][0].getNumber();
+                tempLastElement2 = midiProcessing::tempVector2[i][1].getNumber();
+            }
+            else if(midiProcessing::tempVector2[i].size() == 1)
+            {
+                tempLastElement = midiProcessing::tempVector2[i][0].getNumber();
+                tempLastElement2 = -1;
+            }
+            else
+            {
+                printf("ERROR: 504");
+            }
         }
-        else if(tempLastElement == midiProcessing::tempVector[i].getNumber())
+        else if(tempLastElement != midiProcessing::tempVector2[i][0].getNumber() || tempLastElement2 != midiProcessing::tempVector2[i][1].getNumber())
         {
-            tempLastElement = midiProcessing::tempVector[i].getNumber();
+            if (midiProcessing::tempVector2[i].size() == 2)
+            {
+                midiProcessing::markovList2.push_back(B);
+                midiProcessing::markovList2[index+1].push_back(midiProcessing::tempVector2[i][0]);
+                midiProcessing::markovList2[index+1].push_back(midiProcessing::tempVector2[i][1]);
+                index++;
+                
+                tempLastElement = midiProcessing::tempVector2[i][0].getNumber();
+                tempLastElement2 = midiProcessing::tempVector2[i][1].getNumber();
+            }
+            else if(midiProcessing::tempVector2[i].size() == 1)
+            {
+                //midiProcessing::markovList2.push_back(B);
+                //midiProcessing::markovList2[index+1].push_back(midiProcessing::tempVector2[i][0]);
+                //index++;
+                
+                tempLastElement = midiProcessing::tempVector2[i][0].getNumber();
+                tempLastElement2 = -1;
+            }
+            else
+            {
+                printf("ERROR: 505");
+            }
         }
         else
         {
-            printf("ERROR: 404");
+            printf("ERROR: 502");
         }
     }
 }

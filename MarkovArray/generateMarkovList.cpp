@@ -12,6 +12,7 @@
 void midiProcessing::generateMarkovList()
 {
     sortTempVector();
+    
     for(int i = 0; i < midiProcessing::noteData.size()-1; i++)
     {
         for(int j = 0; j < midiProcessing::markovList.size(); j++)

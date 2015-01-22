@@ -11,8 +11,8 @@
 
 void midiProcessing::sortTempVector()
 {
-    int tempLastElement = 0;
-    int index = 1;
+    int tempLastElement;
+    int index = 0;
     std::vector<note> B;
     std::sort(midiProcessing::tempVector.begin(), midiProcessing::tempVector.end());
     
@@ -26,7 +26,7 @@ void midiProcessing::sortTempVector()
         if(tempLastElement != midiProcessing::tempVector[i].getNumber())
         {
             midiProcessing::markovList.push_back(B);
-            midiProcessing::markovList[index].push_back(midiProcessing::tempVector[i]);
+            midiProcessing::markovList[index+1].push_back(midiProcessing::tempVector[i]);
             index++;
             tempLastElement = midiProcessing::tempVector[i].getNumber();
         }
@@ -39,5 +39,4 @@ void midiProcessing::sortTempVector()
             printf("ERROR: 404");
         }
     }
-    midiProcessing::markovList[index-1].push_back(midiProcessing::tempVector[0]);
 }

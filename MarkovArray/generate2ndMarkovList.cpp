@@ -11,14 +11,15 @@
 
 void midiProcessing::generate2ndMarkovList()
 {
-    sortTempVector();
-    for(int i = 0; i < midiProcessing::noteData.size()-1; i++)
+    sort2ndTempVector();
+    
+    for(int i = 0; i < midiProcessing::noteData.size()-2; i++)
     {
-        for(int j = 0; j < midiProcessing::markovList.size(); j++)
+        for(int j = 0; j < midiProcessing::markovList2.size(); j++)
         {
-            if(midiProcessing::noteData[i].getNumber() == midiProcessing::markovList[j][0].getNumber())
+            if(midiProcessing::noteData[i].getNumber() == midiProcessing::markovList2[j][0].getNumber() && midiProcessing::noteData[i+1].getNumber() == midiProcessing::markovList2[j][1].getNumber())
             {
-                midiProcessing::markovList[j].push_back(midiProcessing::noteData[i+1]);
+                midiProcessing::markovList2[j].push_back(midiProcessing::noteData[i+2]);
                 break;
             }
         }

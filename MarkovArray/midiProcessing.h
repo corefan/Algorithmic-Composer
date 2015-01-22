@@ -14,8 +14,10 @@
 class midiProcessing
 {
 private:
-    std::vector<int> trackData{1, 2, 3, 4, 5, 6, 7, 8, 9, 8, 7, 6, 5, 4, 3, 2, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    std::vector<int> trackData{9, 6, 6, 3, 4, 13, 8, 2, 3, 11, 4};
     std::vector< std::vector<note> > markovList;
+    std::vector< std::vector<note> > markovList2;
+    std::vector< std::vector<note> > tempVector2;
     std::vector<note> tempVector;
     std::vector<note> noteData;
     
@@ -25,6 +27,7 @@ public:
     void sortTempVector();
     void sort2ndTempVector();
     void printMarkovList();
+    void printMarkovList2();
     void generateMarkovList();
     void generate2ndMarkovList();
     void passNoteData();

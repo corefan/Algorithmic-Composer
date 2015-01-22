@@ -15,11 +15,14 @@ int main()
     const char *afile = "/Users/Lukas/Documents/MD/5.Semester/Medienprogrammierung/test.mid";
     readMidi rm;
     
-
     
+    midiProcessing mp;
+    mp.printTrack();
+    mp.generateMarkovList();
+    mp.printMarkovList();
     
     midiProcessing mps;
     mps.generate2ndMarkovList();
-    mps.printMarkovList();
+    mps.printMarkovList2();
     
 };
