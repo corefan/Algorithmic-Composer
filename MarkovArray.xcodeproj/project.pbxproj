@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		804B90521A375B6C006723ED /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804B90511A375B6C006723ED /* main.cpp */; };
 		804B90591A375C45006723ED /* midiProcessing.h in Sources */ = {isa = PBXBuildFile; fileRef = 804B90581A375C45006723ED /* midiProcessing.h */; };
-		80510CED1A67CF6A007D82E0 /* readFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80510CEC1A67CF6A007D82E0 /* readFile.cpp */; };
 		8079788D1A573D660036D749 /* getMidiData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8079788B1A573D660036D749 /* getMidiData.cpp */; };
 		80D457811A39B31800461D7C /* setNote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D457801A39B31800461D7C /* setNote.cpp */; };
 		80D457831A39B55A00461D7C /* getNote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D457821A39B55A00461D7C /* getNote.cpp */; };
 		80E887B61A570F4D00F71DFC /* Note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80E887B51A570F4D00F71DFC /* Note.cpp */; };
+		FB7C17541B28E37B00C5D395 /* readFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB7C17531B28E37B00C5D395 /* readFile.cpp */; };
 		FB814E141B28881000EDD9E1 /* printNotes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E131B28881000EDD9E1 /* printNotes.cpp */; };
 		FB814E161B28887600EDD9E1 /* getTPQ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E151B28887600EDD9E1 /* getTPQ.cpp */; };
 		FB814E181B2888B300EDD9E1 /* generateMidiFileOriginalRhythm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E171B2888B300EDD9E1 /* generateMidiFileOriginalRhythm.cpp */; };
@@ -28,19 +28,19 @@
 		FB814E2A1B28897400EDD9E1 /* sort2ndTempVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E291B28897400EDD9E1 /* sort2ndTempVector.cpp */; };
 		FB814E2C1B28897C00EDD9E1 /* printTrack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E2B1B28897C00EDD9E1 /* printTrack.cpp */; };
 		FB814E2E1B28898300EDD9E1 /* printMarkovList2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E2D1B28898300EDD9E1 /* printMarkovList2.cpp */; };
-		FBD11DFD1A7117CB00C3CFB9 /* Array.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD11DF61A7117CB00C3CFB9 /* Array.h */; };
-		FBD11DFE1A7117CB00C3CFB9 /* FileIO.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD11DF71A7117CB00C3CFB9 /* FileIO.h */; };
-		FBD11DFF1A7117CB00C3CFB9 /* MidiFile.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD11DF81A7117CB00C3CFB9 /* MidiFile.h */; };
-		FBD11E001A7117CB00C3CFB9 /* Options_private.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD11DF91A7117CB00C3CFB9 /* Options_private.h */; };
-		FBD11E011A7117CB00C3CFB9 /* Options.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD11DFA1A7117CB00C3CFB9 /* Options.h */; };
-		FBD11E021A7117CB00C3CFB9 /* SigCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD11DFB1A7117CB00C3CFB9 /* SigCollection.h */; };
-		FBD11E031A7117CB00C3CFB9 /* sigConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD11DFC1A7117CB00C3CFB9 /* sigConfiguration.h */; };
-		FBD11E061A7117F000C3CFB9 /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD11E041A7117F000C3CFB9 /* Array.cpp */; };
-		FBD11E071A7117F000C3CFB9 /* SigCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD11E051A7117F000C3CFB9 /* SigCollection.cpp */; };
-		FBD11E0C1A71180000C3CFB9 /* FileIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD11E081A71180000C3CFB9 /* FileIO.cpp */; };
-		FBD11E0D1A71180000C3CFB9 /* MidiFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD11E091A71180000C3CFB9 /* MidiFile.cpp */; };
-		FBD11E0E1A71180000C3CFB9 /* Options_private.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD11E0A1A71180000C3CFB9 /* Options_private.cpp */; };
-		FBD11E0F1A71180000C3CFB9 /* Options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBD11E0B1A71180000C3CFB9 /* Options.cpp */; };
+		FBE2C2561B28E3EE0084E346 /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBE2C2491B28E3EE0084E346 /* Array.cpp */; };
+		FBE2C2571B28E3EE0084E346 /* Array.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE2C24A1B28E3EE0084E346 /* Array.h */; };
+		FBE2C2581B28E3EE0084E346 /* FileIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBE2C24B1B28E3EE0084E346 /* FileIO.cpp */; };
+		FBE2C2591B28E3EE0084E346 /* FileIO.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE2C24C1B28E3EE0084E346 /* FileIO.h */; };
+		FBE2C25A1B28E3EE0084E346 /* MidiFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBE2C24D1B28E3EE0084E346 /* MidiFile.cpp */; };
+		FBE2C25B1B28E3EE0084E346 /* MidiFile.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE2C24E1B28E3EE0084E346 /* MidiFile.h */; };
+		FBE2C25C1B28E3EE0084E346 /* Options_private.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBE2C24F1B28E3EE0084E346 /* Options_private.cpp */; };
+		FBE2C25D1B28E3EE0084E346 /* Options_private.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE2C2501B28E3EE0084E346 /* Options_private.h */; };
+		FBE2C25E1B28E3EE0084E346 /* Options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBE2C2511B28E3EE0084E346 /* Options.cpp */; };
+		FBE2C25F1B28E3EE0084E346 /* Options.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE2C2521B28E3EE0084E346 /* Options.h */; };
+		FBE2C2601B28E3EE0084E346 /* SigCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBE2C2531B28E3EE0084E346 /* SigCollection.cpp */; };
+		FBE2C2611B28E3EE0084E346 /* SigCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE2C2541B28E3EE0084E346 /* SigCollection.h */; };
+		FBE2C2621B28E3EE0084E346 /* sigConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE2C2551B28E3EE0084E346 /* sigConfiguration.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,13 +59,13 @@
 		804B904E1A375B6C006723ED /* MarkovArray */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MarkovArray; sourceTree = BUILT_PRODUCTS_DIR; };
 		804B90511A375B6C006723ED /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		804B90581A375C45006723ED /* midiProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = midiProcessing.h; sourceTree = "<group>"; };
-		80510CEC1A67CF6A007D82E0 /* readFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = readFile.cpp; path = ../readFile.cpp; sourceTree = "<group>"; };
 		8079788A1A573CAB0036D749 /* readMidi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = readMidi.h; sourceTree = "<group>"; };
 		8079788B1A573D660036D749 /* getMidiData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = getMidiData.cpp; sourceTree = "<group>"; };
 		80D4577D1A39AF6600461D7C /* note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = note.h; sourceTree = "<group>"; };
 		80D457801A39B31800461D7C /* setNote.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = setNote.cpp; sourceTree = "<group>"; };
 		80D457821A39B55A00461D7C /* getNote.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = getNote.cpp; sourceTree = "<group>"; };
 		80E887B51A570F4D00F71DFC /* Note.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Note.cpp; sourceTree = "<group>"; };
+		FB7C17531B28E37B00C5D395 /* readFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = readFile.cpp; sourceTree = "<group>"; };
 		FB814E131B28881000EDD9E1 /* printNotes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printNotes.cpp; sourceTree = "<group>"; };
 		FB814E151B28887600EDD9E1 /* getTPQ.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = getTPQ.cpp; sourceTree = "<group>"; };
 		FB814E171B2888B300EDD9E1 /* generateMidiFileOriginalRhythm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generateMidiFileOriginalRhythm.cpp; sourceTree = "<group>"; };
@@ -80,19 +80,19 @@
 		FB814E291B28897400EDD9E1 /* sort2ndTempVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sort2ndTempVector.cpp; sourceTree = "<group>"; };
 		FB814E2B1B28897C00EDD9E1 /* printTrack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printTrack.cpp; sourceTree = "<group>"; };
 		FB814E2D1B28898300EDD9E1 /* printMarkovList2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printMarkovList2.cpp; sourceTree = "<group>"; };
-		FBD11DF61A7117CB00C3CFB9 /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Array.h; path = ../Array.h; sourceTree = "<group>"; };
-		FBD11DF71A7117CB00C3CFB9 /* FileIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FileIO.h; path = ../FileIO.h; sourceTree = "<group>"; };
-		FBD11DF81A7117CB00C3CFB9 /* MidiFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MidiFile.h; path = ../MidiFile.h; sourceTree = "<group>"; };
-		FBD11DF91A7117CB00C3CFB9 /* Options_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Options_private.h; path = ../Options_private.h; sourceTree = "<group>"; };
-		FBD11DFA1A7117CB00C3CFB9 /* Options.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Options.h; path = ../Options.h; sourceTree = "<group>"; };
-		FBD11DFB1A7117CB00C3CFB9 /* SigCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SigCollection.h; path = ../SigCollection.h; sourceTree = "<group>"; };
-		FBD11DFC1A7117CB00C3CFB9 /* sigConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sigConfiguration.h; path = ../sigConfiguration.h; sourceTree = "<group>"; };
-		FBD11E041A7117F000C3CFB9 /* Array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Array.cpp; path = ../Array.cpp; sourceTree = "<group>"; };
-		FBD11E051A7117F000C3CFB9 /* SigCollection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SigCollection.cpp; path = ../SigCollection.cpp; sourceTree = "<group>"; };
-		FBD11E081A71180000C3CFB9 /* FileIO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = FileIO.cpp; path = ../FileIO.cpp; sourceTree = "<group>"; };
-		FBD11E091A71180000C3CFB9 /* MidiFile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MidiFile.cpp; path = ../MidiFile.cpp; sourceTree = "<group>"; };
-		FBD11E0A1A71180000C3CFB9 /* Options_private.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Options_private.cpp; path = ../Options_private.cpp; sourceTree = "<group>"; };
-		FBD11E0B1A71180000C3CFB9 /* Options.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Options.cpp; path = ../Options.cpp; sourceTree = "<group>"; };
+		FBE2C2491B28E3EE0084E346 /* Array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Array.cpp; sourceTree = "<group>"; };
+		FBE2C24A1B28E3EE0084E346 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		FBE2C24B1B28E3EE0084E346 /* FileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileIO.cpp; sourceTree = "<group>"; };
+		FBE2C24C1B28E3EE0084E346 /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; };
+		FBE2C24D1B28E3EE0084E346 /* MidiFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MidiFile.cpp; sourceTree = "<group>"; };
+		FBE2C24E1B28E3EE0084E346 /* MidiFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiFile.h; sourceTree = "<group>"; };
+		FBE2C24F1B28E3EE0084E346 /* Options_private.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Options_private.cpp; sourceTree = "<group>"; };
+		FBE2C2501B28E3EE0084E346 /* Options_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Options_private.h; sourceTree = "<group>"; };
+		FBE2C2511B28E3EE0084E346 /* Options.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Options.cpp; sourceTree = "<group>"; };
+		FBE2C2521B28E3EE0084E346 /* Options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Options.h; sourceTree = "<group>"; };
+		FBE2C2531B28E3EE0084E346 /* SigCollection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SigCollection.cpp; sourceTree = "<group>"; };
+		FBE2C2541B28E3EE0084E346 /* SigCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SigCollection.h; sourceTree = "<group>"; };
+		FBE2C2551B28E3EE0084E346 /* sigConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sigConfiguration.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,19 +136,19 @@
 		80510CFC1A67D77A007D82E0 /* MidiFile_Lib */ = {
 			isa = PBXGroup;
 			children = (
-				FBD11E081A71180000C3CFB9 /* FileIO.cpp */,
-				FBD11E091A71180000C3CFB9 /* MidiFile.cpp */,
-				FBD11E0A1A71180000C3CFB9 /* Options_private.cpp */,
-				FBD11E0B1A71180000C3CFB9 /* Options.cpp */,
-				FBD11E041A7117F000C3CFB9 /* Array.cpp */,
-				FBD11E051A7117F000C3CFB9 /* SigCollection.cpp */,
-				FBD11DF61A7117CB00C3CFB9 /* Array.h */,
-				FBD11DF71A7117CB00C3CFB9 /* FileIO.h */,
-				FBD11DF81A7117CB00C3CFB9 /* MidiFile.h */,
-				FBD11DF91A7117CB00C3CFB9 /* Options_private.h */,
-				FBD11DFA1A7117CB00C3CFB9 /* Options.h */,
-				FBD11DFB1A7117CB00C3CFB9 /* SigCollection.h */,
-				FBD11DFC1A7117CB00C3CFB9 /* sigConfiguration.h */,
+				FBE2C2491B28E3EE0084E346 /* Array.cpp */,
+				FBE2C24A1B28E3EE0084E346 /* Array.h */,
+				FBE2C24B1B28E3EE0084E346 /* FileIO.cpp */,
+				FBE2C24C1B28E3EE0084E346 /* FileIO.h */,
+				FBE2C24D1B28E3EE0084E346 /* MidiFile.cpp */,
+				FBE2C24E1B28E3EE0084E346 /* MidiFile.h */,
+				FBE2C24F1B28E3EE0084E346 /* Options_private.cpp */,
+				FBE2C2501B28E3EE0084E346 /* Options_private.h */,
+				FBE2C2511B28E3EE0084E346 /* Options.cpp */,
+				FBE2C2521B28E3EE0084E346 /* Options.h */,
+				FBE2C2531B28E3EE0084E346 /* SigCollection.cpp */,
+				FBE2C2541B28E3EE0084E346 /* SigCollection.h */,
+				FBE2C2551B28E3EE0084E346 /* sigConfiguration.h */,
 			);
 			name = MidiFile_Lib;
 			sourceTree = "<group>";
@@ -159,9 +159,9 @@
 				80510CFC1A67D77A007D82E0 /* MidiFile_Lib */,
 				8079788A1A573CAB0036D749 /* readMidi.h */,
 				FB814E131B28881000EDD9E1 /* printNotes.cpp */,
-				80510CEC1A67CF6A007D82E0 /* readFile.cpp */,
 				8079788B1A573D660036D749 /* getMidiData.cpp */,
 				FB814E151B28887600EDD9E1 /* getTPQ.cpp */,
+				FB7C17531B28E37B00C5D395 /* readFile.cpp */,
 			);
 			name = ReadMidi;
 			sourceTree = "<group>";
@@ -204,13 +204,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD11DFD1A7117CB00C3CFB9 /* Array.h in Headers */,
-				FBD11DFE1A7117CB00C3CFB9 /* FileIO.h in Headers */,
-				FBD11DFF1A7117CB00C3CFB9 /* MidiFile.h in Headers */,
-				FBD11E001A7117CB00C3CFB9 /* Options_private.h in Headers */,
-				FBD11E011A7117CB00C3CFB9 /* Options.h in Headers */,
-				FBD11E021A7117CB00C3CFB9 /* SigCollection.h in Headers */,
-				FBD11E031A7117CB00C3CFB9 /* sigConfiguration.h in Headers */,
+				FBE2C2591B28E3EE0084E346 /* FileIO.h in Headers */,
+				FBE2C2621B28E3EE0084E346 /* sigConfiguration.h in Headers */,
+				FBE2C25D1B28E3EE0084E346 /* Options_private.h in Headers */,
+				FBE2C2611B28E3EE0084E346 /* SigCollection.h in Headers */,
+				FBE2C2571B28E3EE0084E346 /* Array.h in Headers */,
+				FBE2C25F1B28E3EE0084E346 /* Options.h in Headers */,
+				FBE2C25B1B28E3EE0084E346 /* MidiFile.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,28 +271,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD11E0C1A71180000C3CFB9 /* FileIO.cpp in Sources */,
 				FB814E221B28894500EDD9E1 /* generateMarkovList.cpp in Sources */,
-				FBD11E0D1A71180000C3CFB9 /* MidiFile.cpp in Sources */,
+				FB7C17541B28E37B00C5D395 /* readFile.cpp in Sources */,
 				FB814E2C1B28897C00EDD9E1 /* printTrack.cpp in Sources */,
+				FBE2C2561B28E3EE0084E346 /* Array.cpp in Sources */,
+				FBE2C25E1B28E3EE0084E346 /* Options.cpp in Sources */,
 				FB814E181B2888B300EDD9E1 /* generateMidiFileOriginalRhythm.cpp in Sources */,
-				FBD11E0E1A71180000C3CFB9 /* Options_private.cpp in Sources */,
 				FB814E241B28894E00EDD9E1 /* generate2ndMarkovList.cpp in Sources */,
 				FB814E1A1B28891100EDD9E1 /* generate2ndMidiFileOriginalRhythm.cpp in Sources */,
-				FBD11E0F1A71180000C3CFB9 /* Options.cpp in Sources */,
 				FB814E201B28893A00EDD9E1 /* readInputFile.cpp in Sources */,
+				FBE2C25A1B28E3EE0084E346 /* MidiFile.cpp in Sources */,
 				FB814E1E1B28892D00EDD9E1 /* generateMidiFile.cpp in Sources */,
-				FBD11E061A7117F000C3CFB9 /* Array.cpp in Sources */,
-				FBD11E071A7117F000C3CFB9 /* SigCollection.cpp in Sources */,
 				80D457811A39B31800461D7C /* setNote.cpp in Sources */,
 				80E887B61A570F4D00F71DFC /* Note.cpp in Sources */,
-				80510CED1A67CF6A007D82E0 /* readFile.cpp in Sources */,
 				FB814E2E1B28898300EDD9E1 /* printMarkovList2.cpp in Sources */,
 				FB814E161B28887600EDD9E1 /* getTPQ.cpp in Sources */,
 				FB814E1C1B28891E00EDD9E1 /* generate2ndMidiFile.cpp in Sources */,
+				FBE2C25C1B28E3EE0084E346 /* Options_private.cpp in Sources */,
 				804B90521A375B6C006723ED /* main.cpp in Sources */,
 				804B90591A375C45006723ED /* midiProcessing.h in Sources */,
 				FB814E141B28881000EDD9E1 /* printNotes.cpp in Sources */,
+				FBE2C2601B28E3EE0084E346 /* SigCollection.cpp in Sources */,
+				FBE2C2581B28E3EE0084E346 /* FileIO.cpp in Sources */,
 				FB814E281B28896B00EDD9E1 /* sortTempVector.cpp in Sources */,
 				80D457831A39B55A00461D7C /* getNote.cpp in Sources */,
 				8079788D1A573D660036D749 /* getMidiData.cpp in Sources */,
