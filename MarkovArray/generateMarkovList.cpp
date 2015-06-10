@@ -2,25 +2,35 @@
 //  generateMarkovList.cpp
 //  MarkovArray
 //
-//  Created by Lukas Nowok on 09/12/14.
+//  Created by Jonas Schüle on 09/12/14.
 //  Copyright (c) 2014 hw. All rights reserved.
 //
 
-#include <stdio.h>
 #include "midiProcessing.h"
 
 void midiProcessing::generateMarkovList()
 {
-    sortTempVector();
-    
-    for(int i = 0; i < midiProcessing::noteData.size()-1; i++)
+    if (midiProcessing::noteData.size() > 0)
     {
-        for(int j = 0; j < midiProcessing::markovList.size(); j++)
+        sortTempVector();
+        for(int i = 0; i < midiProcessing::noteData.size()-1; i++)
         {
-            if(midiProcessing::noteData[i].getNumber() == midiProcessing::markovList[j][0].getNumber())
+            for(int j = 0; j < midiProcessing::markovList.size(); j++)
             {
-                midiProcessing::markovList[j].push_back(midiProcessing::noteData[i+1]);
-                break;
+                if(midiProcessing::noteData.at(i).getNumber() == midiProcessing::markovList.at(j).at(0).getNumber())
+                {
+                    midiProcessing::markovList.at(j).push_back(midiProcessing::noteData.at(i+1));
+                }
+            }
+        }
+        for(int i = 0; i < midiProcessing::noteData.size(); i++)
+        {
+            for(int j = 0; j < midiProcessing::markovList.size(); j++)
+            {
+                if(midiProcessing::markovList.at(j).size() == 1)
+                {
+                    midiProcessing::markovList.at(j).push_back(midiProcessing::noteData.at(0));
+                }
             }
         }
     }

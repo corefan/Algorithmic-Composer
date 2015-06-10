@@ -2,7 +2,7 @@
 //  Note.h
 //  MarkovArray
 //
-//  Created by Lukas Nowok on 11.12.14.
+//  Created by Jonas Schüle on 11.12.14.
 //  Copyright (c) 2014 hw. All rights reserved.
 //
 
@@ -16,28 +16,35 @@
 class note
 {
 private:
-    std::vector<int> noteData{0, 0, 0};
+    ///notenumber, ontime, velocity, offtime, duration, rest////
+    std::vector<int> noteData{0, 0, 0, 0, 0, 0};
     int key;
     
 public:
     note();
-    note(int number, int length, int velocity);
+    note(int number, int onTime, int velocity, int offTime);
     
     void setNumber(int number);
-    void setLength(int length);
+    void setOnTime(int onTime);
+    void setOffTime(int offTime);
     void setVelocity(int velocity);
-    void setNote(int number, int length, int velocity);
+    void setNote(int number, int duration, int velocity);
+    void setDuration();
+    void setRest(int on);
     
     int getNumber();
-    int getLength();
+    int getOnTime();
     int getVelocity();
+    int getOffTime();
+    int getDuration();
+    int getRest();
     
     std::vector<int> getNote();
     
     note(int k) : key(k){}
-        
+    
     bool operator < (const note& str) const
-
+    
     {
         return (key < str.key);
     }

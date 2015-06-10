@@ -8,7 +8,7 @@
 
 #include "readMidi.h"
 
-void readMidi::getMidiData(std::vector<note> &noteVector, int track)
+int readMidi::getTPQ()
 {
-    noteVector = noteData.at(track);
+    return readMidi::tpq;
 }

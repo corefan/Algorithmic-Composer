@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		804B90521A375B6C006723ED /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804B90511A375B6C006723ED /* main.cpp */; };
 		804B90591A375C45006723ED /* midiProcessing.h in Sources */ = {isa = PBXBuildFile; fileRef = 804B90581A375C45006723ED /* midiProcessing.h */; };
-		804B905D1A375E4C006723ED /* printTrack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804B905C1A375E4C006723ED /* printTrack.cpp */; };
-		804B90611A37636D006723ED /* midiProcessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804B90601A37636D006723ED /* midiProcessing.cpp */; };
-		804B90631A37645B006723ED /* sortTempVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804B90621A37645B006723ED /* sortTempVector.cpp */; };
-		804B90651A377384006723ED /* printMarkovList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804B90641A377384006723ED /* printMarkovList.cpp */; };
-		804B90671A377BC3006723ED /* generateMarkovList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804B90661A377BC3006723ED /* generateMarkovList.cpp */; };
 		80510CED1A67CF6A007D82E0 /* readFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80510CEC1A67CF6A007D82E0 /* readFile.cpp */; };
-		80510CEF1A67D523007D82E0 /* readMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80510CEE1A67D523007D82E0 /* readMidi.cpp */; };
-		8051E0E31A5710E8009C1292 /* passNoteData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8051E0E21A5710E8009C1292 /* passNoteData.cpp */; };
 		8079788D1A573D660036D749 /* getMidiData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8079788B1A573D660036D749 /* getMidiData.cpp */; };
-		80D4577C1A39AB9900461D7C /* generate2ndMarkovList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D4577B1A39AB9900461D7C /* generate2ndMarkovList.cpp */; };
 		80D457811A39B31800461D7C /* setNote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D457801A39B31800461D7C /* setNote.cpp */; };
 		80D457831A39B55A00461D7C /* getNote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80D457821A39B55A00461D7C /* getNote.cpp */; };
 		80E887B61A570F4D00F71DFC /* Note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80E887B51A570F4D00F71DFC /* Note.cpp */; };
-		FB3663231A42ED9A0093157A /* sort2ndTempVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB3663221A42ED9A0093157A /* sort2ndTempVector.cpp */; };
-		FB8AB8181A7118FF0070687C /* printMarkovList2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB8AB8171A7118FF0070687C /* printMarkovList2.cpp */; };
+		FB814E141B28881000EDD9E1 /* printNotes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E131B28881000EDD9E1 /* printNotes.cpp */; };
+		FB814E161B28887600EDD9E1 /* getTPQ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E151B28887600EDD9E1 /* getTPQ.cpp */; };
+		FB814E181B2888B300EDD9E1 /* generateMidiFileOriginalRhythm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E171B2888B300EDD9E1 /* generateMidiFileOriginalRhythm.cpp */; };
+		FB814E1A1B28891100EDD9E1 /* generate2ndMidiFileOriginalRhythm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E191B28891100EDD9E1 /* generate2ndMidiFileOriginalRhythm.cpp */; };
+		FB814E1C1B28891E00EDD9E1 /* generate2ndMidiFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E1B1B28891E00EDD9E1 /* generate2ndMidiFile.cpp */; };
+		FB814E1E1B28892D00EDD9E1 /* generateMidiFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E1D1B28892D00EDD9E1 /* generateMidiFile.cpp */; };
+		FB814E201B28893A00EDD9E1 /* readInputFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E1F1B28893A00EDD9E1 /* readInputFile.cpp */; };
+		FB814E221B28894500EDD9E1 /* generateMarkovList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E211B28894500EDD9E1 /* generateMarkovList.cpp */; };
+		FB814E241B28894E00EDD9E1 /* generate2ndMarkovList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E231B28894E00EDD9E1 /* generate2ndMarkovList.cpp */; };
+		FB814E261B28895E00EDD9E1 /* printMarkovList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E251B28895E00EDD9E1 /* printMarkovList.cpp */; };
+		FB814E281B28896B00EDD9E1 /* sortTempVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E271B28896B00EDD9E1 /* sortTempVector.cpp */; };
+		FB814E2A1B28897400EDD9E1 /* sort2ndTempVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E291B28897400EDD9E1 /* sort2ndTempVector.cpp */; };
+		FB814E2C1B28897C00EDD9E1 /* printTrack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E2B1B28897C00EDD9E1 /* printTrack.cpp */; };
+		FB814E2E1B28898300EDD9E1 /* printMarkovList2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814E2D1B28898300EDD9E1 /* printMarkovList2.cpp */; };
 		FBD11DFD1A7117CB00C3CFB9 /* Array.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD11DF61A7117CB00C3CFB9 /* Array.h */; };
 		FBD11DFE1A7117CB00C3CFB9 /* FileIO.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD11DF71A7117CB00C3CFB9 /* FileIO.h */; };
 		FBD11DFF1A7117CB00C3CFB9 /* MidiFile.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD11DF81A7117CB00C3CFB9 /* MidiFile.h */; };
@@ -55,23 +59,27 @@
 		804B904E1A375B6C006723ED /* MarkovArray */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MarkovArray; sourceTree = BUILT_PRODUCTS_DIR; };
 		804B90511A375B6C006723ED /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		804B90581A375C45006723ED /* midiProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = midiProcessing.h; sourceTree = "<group>"; };
-		804B905C1A375E4C006723ED /* printTrack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printTrack.cpp; sourceTree = "<group>"; };
-		804B90601A37636D006723ED /* midiProcessing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = midiProcessing.cpp; sourceTree = "<group>"; };
-		804B90621A37645B006723ED /* sortTempVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sortTempVector.cpp; sourceTree = "<group>"; };
-		804B90641A377384006723ED /* printMarkovList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printMarkovList.cpp; sourceTree = "<group>"; };
-		804B90661A377BC3006723ED /* generateMarkovList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generateMarkovList.cpp; sourceTree = "<group>"; };
 		80510CEC1A67CF6A007D82E0 /* readFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = readFile.cpp; path = ../readFile.cpp; sourceTree = "<group>"; };
-		80510CEE1A67D523007D82E0 /* readMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = readMidi.cpp; sourceTree = "<group>"; };
-		8051E0E21A5710E8009C1292 /* passNoteData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = passNoteData.cpp; sourceTree = "<group>"; };
 		8079788A1A573CAB0036D749 /* readMidi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = readMidi.h; sourceTree = "<group>"; };
 		8079788B1A573D660036D749 /* getMidiData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = getMidiData.cpp; sourceTree = "<group>"; };
-		80D4577B1A39AB9900461D7C /* generate2ndMarkovList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generate2ndMarkovList.cpp; sourceTree = "<group>"; };
 		80D4577D1A39AF6600461D7C /* note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = note.h; sourceTree = "<group>"; };
 		80D457801A39B31800461D7C /* setNote.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = setNote.cpp; sourceTree = "<group>"; };
 		80D457821A39B55A00461D7C /* getNote.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = getNote.cpp; sourceTree = "<group>"; };
 		80E887B51A570F4D00F71DFC /* Note.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Note.cpp; sourceTree = "<group>"; };
-		FB3663221A42ED9A0093157A /* sort2ndTempVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sort2ndTempVector.cpp; sourceTree = "<group>"; };
-		FB8AB8171A7118FF0070687C /* printMarkovList2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printMarkovList2.cpp; sourceTree = "<group>"; };
+		FB814E131B28881000EDD9E1 /* printNotes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printNotes.cpp; sourceTree = "<group>"; };
+		FB814E151B28887600EDD9E1 /* getTPQ.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = getTPQ.cpp; sourceTree = "<group>"; };
+		FB814E171B2888B300EDD9E1 /* generateMidiFileOriginalRhythm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generateMidiFileOriginalRhythm.cpp; sourceTree = "<group>"; };
+		FB814E191B28891100EDD9E1 /* generate2ndMidiFileOriginalRhythm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generate2ndMidiFileOriginalRhythm.cpp; sourceTree = "<group>"; };
+		FB814E1B1B28891E00EDD9E1 /* generate2ndMidiFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generate2ndMidiFile.cpp; sourceTree = "<group>"; };
+		FB814E1D1B28892D00EDD9E1 /* generateMidiFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generateMidiFile.cpp; sourceTree = "<group>"; };
+		FB814E1F1B28893A00EDD9E1 /* readInputFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = readInputFile.cpp; sourceTree = "<group>"; };
+		FB814E211B28894500EDD9E1 /* generateMarkovList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generateMarkovList.cpp; sourceTree = "<group>"; };
+		FB814E231B28894E00EDD9E1 /* generate2ndMarkovList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generate2ndMarkovList.cpp; sourceTree = "<group>"; };
+		FB814E251B28895E00EDD9E1 /* printMarkovList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printMarkovList.cpp; sourceTree = "<group>"; };
+		FB814E271B28896B00EDD9E1 /* sortTempVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sortTempVector.cpp; sourceTree = "<group>"; };
+		FB814E291B28897400EDD9E1 /* sort2ndTempVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sort2ndTempVector.cpp; sourceTree = "<group>"; };
+		FB814E2B1B28897C00EDD9E1 /* printTrack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printTrack.cpp; sourceTree = "<group>"; };
+		FB814E2D1B28898300EDD9E1 /* printMarkovList2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printMarkovList2.cpp; sourceTree = "<group>"; };
 		FBD11DF61A7117CB00C3CFB9 /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Array.h; path = ../Array.h; sourceTree = "<group>"; };
 		FBD11DF71A7117CB00C3CFB9 /* FileIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FileIO.h; path = ../FileIO.h; sourceTree = "<group>"; };
 		FBD11DF81A7117CB00C3CFB9 /* MidiFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MidiFile.h; path = ../MidiFile.h; sourceTree = "<group>"; };
@@ -150,9 +158,10 @@
 			children = (
 				80510CFC1A67D77A007D82E0 /* MidiFile_Lib */,
 				8079788A1A573CAB0036D749 /* readMidi.h */,
-				80510CEE1A67D523007D82E0 /* readMidi.cpp */,
+				FB814E131B28881000EDD9E1 /* printNotes.cpp */,
 				80510CEC1A67CF6A007D82E0 /* readFile.cpp */,
 				8079788B1A573D660036D749 /* getMidiData.cpp */,
+				FB814E151B28887600EDD9E1 /* getTPQ.cpp */,
 			);
 			name = ReadMidi;
 			sourceTree = "<group>";
@@ -161,15 +170,18 @@
 			isa = PBXGroup;
 			children = (
 				804B90581A375C45006723ED /* midiProcessing.h */,
-				804B90601A37636D006723ED /* midiProcessing.cpp */,
-				8051E0E21A5710E8009C1292 /* passNoteData.cpp */,
-				804B90661A377BC3006723ED /* generateMarkovList.cpp */,
-				80D4577B1A39AB9900461D7C /* generate2ndMarkovList.cpp */,
-				804B90641A377384006723ED /* printMarkovList.cpp */,
-				804B90621A37645B006723ED /* sortTempVector.cpp */,
-				FB3663221A42ED9A0093157A /* sort2ndTempVector.cpp */,
-				804B905C1A375E4C006723ED /* printTrack.cpp */,
-				FB8AB8171A7118FF0070687C /* printMarkovList2.cpp */,
+				FB814E171B2888B300EDD9E1 /* generateMidiFileOriginalRhythm.cpp */,
+				FB814E191B28891100EDD9E1 /* generate2ndMidiFileOriginalRhythm.cpp */,
+				FB814E1B1B28891E00EDD9E1 /* generate2ndMidiFile.cpp */,
+				FB814E1D1B28892D00EDD9E1 /* generateMidiFile.cpp */,
+				FB814E1F1B28893A00EDD9E1 /* readInputFile.cpp */,
+				FB814E211B28894500EDD9E1 /* generateMarkovList.cpp */,
+				FB814E231B28894E00EDD9E1 /* generate2ndMarkovList.cpp */,
+				FB814E251B28895E00EDD9E1 /* printMarkovList.cpp */,
+				FB814E271B28896B00EDD9E1 /* sortTempVector.cpp */,
+				FB814E291B28897400EDD9E1 /* sort2ndTempVector.cpp */,
+				FB814E2B1B28897C00EDD9E1 /* printTrack.cpp */,
+				FB814E2D1B28898300EDD9E1 /* printMarkovList2.cpp */,
 			);
 			name = MidiProcessing;
 			sourceTree = "<group>";
@@ -179,8 +191,8 @@
 			children = (
 				80D4577D1A39AF6600461D7C /* note.h */,
 				80E887B51A570F4D00F71DFC /* Note.cpp */,
-				80D457821A39B55A00461D7C /* getNote.cpp */,
 				80D457801A39B31800461D7C /* setNote.cpp */,
+				80D457821A39B55A00461D7C /* getNote.cpp */,
 			);
 			name = Note;
 			sourceTree = "<group>";
@@ -260,28 +272,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD11E0C1A71180000C3CFB9 /* FileIO.cpp in Sources */,
+				FB814E221B28894500EDD9E1 /* generateMarkovList.cpp in Sources */,
 				FBD11E0D1A71180000C3CFB9 /* MidiFile.cpp in Sources */,
+				FB814E2C1B28897C00EDD9E1 /* printTrack.cpp in Sources */,
+				FB814E181B2888B300EDD9E1 /* generateMidiFileOriginalRhythm.cpp in Sources */,
 				FBD11E0E1A71180000C3CFB9 /* Options_private.cpp in Sources */,
+				FB814E241B28894E00EDD9E1 /* generate2ndMarkovList.cpp in Sources */,
+				FB814E1A1B28891100EDD9E1 /* generate2ndMidiFileOriginalRhythm.cpp in Sources */,
 				FBD11E0F1A71180000C3CFB9 /* Options.cpp in Sources */,
+				FB814E201B28893A00EDD9E1 /* readInputFile.cpp in Sources */,
+				FB814E1E1B28892D00EDD9E1 /* generateMidiFile.cpp in Sources */,
 				FBD11E061A7117F000C3CFB9 /* Array.cpp in Sources */,
 				FBD11E071A7117F000C3CFB9 /* SigCollection.cpp in Sources */,
-				804B90651A377384006723ED /* printMarkovList.cpp in Sources */,
 				80D457811A39B31800461D7C /* setNote.cpp in Sources */,
-				804B905D1A375E4C006723ED /* printTrack.cpp in Sources */,
-				FB8AB8181A7118FF0070687C /* printMarkovList2.cpp in Sources */,
 				80E887B61A570F4D00F71DFC /* Note.cpp in Sources */,
-				804B90631A37645B006723ED /* sortTempVector.cpp in Sources */,
-				80D4577C1A39AB9900461D7C /* generate2ndMarkovList.cpp in Sources */,
 				80510CED1A67CF6A007D82E0 /* readFile.cpp in Sources */,
-				804B90611A37636D006723ED /* midiProcessing.cpp in Sources */,
-				FB3663231A42ED9A0093157A /* sort2ndTempVector.cpp in Sources */,
+				FB814E2E1B28898300EDD9E1 /* printMarkovList2.cpp in Sources */,
+				FB814E161B28887600EDD9E1 /* getTPQ.cpp in Sources */,
+				FB814E1C1B28891E00EDD9E1 /* generate2ndMidiFile.cpp in Sources */,
 				804B90521A375B6C006723ED /* main.cpp in Sources */,
-				8051E0E31A5710E8009C1292 /* passNoteData.cpp in Sources */,
-				804B90671A377BC3006723ED /* generateMarkovList.cpp in Sources */,
-				80510CEF1A67D523007D82E0 /* readMidi.cpp in Sources */,
 				804B90591A375C45006723ED /* midiProcessing.h in Sources */,
+				FB814E141B28881000EDD9E1 /* printNotes.cpp in Sources */,
+				FB814E281B28896B00EDD9E1 /* sortTempVector.cpp in Sources */,
 				80D457831A39B55A00461D7C /* getNote.cpp in Sources */,
 				8079788D1A573D660036D749 /* getMidiData.cpp in Sources */,
+				FB814E261B28895E00EDD9E1 /* printMarkovList.cpp in Sources */,
+				FB814E2A1B28897400EDD9E1 /* sort2ndTempVector.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

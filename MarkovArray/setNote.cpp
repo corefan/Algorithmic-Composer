@@ -2,11 +2,10 @@
 //  setNote.cpp
 //  MarkovArray
 //
-//  Created by Lukas Nowok on 11.12.14.
+//  Created by Jonas Schüle on 11.12.14.
 //  Copyright (c) 2014 hw. All rights reserved.
 //
 
-#include <stdio.h>
 #include "Note.h"
 
 void note::setNumber(int number)
@@ -21,9 +20,9 @@ void note::setNumber(int number)
     }
 }
 
-void note::setLength(int length)
+void note::setOnTime(int onTime)
 {
-    note::noteData[1] = length;
+    note::noteData[1] = onTime;
 }
 
 void note::setVelocity(int velocity)
@@ -38,9 +37,24 @@ void note::setVelocity(int velocity)
     }
 }
 
-void note::setNote(int number, int length, int velocity)
+void note::setOffTime(int offTime)
+{
+    note::noteData[3] = offTime;
+}
+
+void note::setDuration()
+{
+    note::noteData[4] = noteData.at(3)-noteData.at(1);
+}
+
+void note::setRest(int on)
+{
+    note::noteData[5] = on;
+}
+
+void note::setNote(int number, int duration, int velocity)
 {
     note::noteData[0] = number;
-    note::noteData[1] = length;
+    note::noteData[1] = duration;
     note::noteData[2] = velocity;
 }

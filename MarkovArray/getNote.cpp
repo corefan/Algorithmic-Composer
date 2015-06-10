@@ -2,11 +2,10 @@
 //  getNote.cpp
 //  MarkovArray
 //
-//  Created by Lukas Nowok on 11.12.14.
+//  Created by Jonas Schüle on 11.12.14.
 //  Copyright (c) 2014 hw. All rights reserved.
 //
 
-#include <stdio.h>
 #include "Note.h"
 
 int note::getNumber()
@@ -14,14 +13,29 @@ int note::getNumber()
     return note::noteData[0];
 }
 
-int note::getLength()
+int note::getOnTime()
 {
-    return note::noteData[0];
+    return note::noteData[1];
 }
 
 int note::getVelocity()
 {
-    return note::noteData[0];
+    return note::noteData[2];
+}
+
+int note::getOffTime()
+{
+    return note::noteData[3];
+}
+
+int note::getDuration()
+{
+    return note::noteData[4];
+}
+
+int note::getRest()
+{
+    return note::noteData[5];
 }
 
 std::vector<int> note::getNote()
